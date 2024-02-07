@@ -21,25 +21,25 @@ arrMax = arr[0];
 arrMaxAbs = arr[0];
 arrMaxAbsReal = arr[0];
 arrMaxIndex = 0;
-for (int i = 0; i < N; i++)
+for (int j = 0; j < N; j++)
 {
-    if (arr[i] < 0)
-       arrSumMinus += arr[i];
-    if (arr[i] > 0)
-        arrSumIndexPositive += i;
-    if ((arr[i]*10) % 10 == 0)
+    if (arr[j] < 0)
+       arrSumMinus += arr[j];
+    if (arr[j] > 0)
+        arrSumIndexPositive += j;
+    if ((arr[j]*10) % 10 == 0)
         intNum ++;
-    if (arrMin > arr[i])
-        arrMin = arr[i];
-    if (arrMax < arr[i])
+    if (arrMin > arr[j])
+        arrMin = arr[j];
+    if (arrMax < arr[j])
     {
-        arrMax = arr[i];
-        arrMaxIndex = i;
+        arrMax = arr[j];
+        arrMaxIndex = j;
     }
-    if (arrMaxAbs < Math.Abs(arr[i]))
+    if (arrMaxAbs < Math.Abs(arr[j]))
     {
-        arrMaxAbs = Math.Abs(arr[i]);
-        arrMaxAbsReal = arr[i];
+        arrMaxAbs = Math.Abs(arr[j]);
+        arrMaxAbsReal = arr[j];
     }
 }
 Console.WriteLine($"\nсума від’ємних елементів масиву: {arrSumMinus}");
