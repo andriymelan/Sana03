@@ -10,11 +10,11 @@ int.TryParse(Console.ReadLine(), out N);
 double[] arr = new double[N];
 Random rnd = new Random();
 Console.Write("Масив: ");
-for (int j = 0; j < N; j++)
+for (int i = 0; i < N; i++)
 {
-    arr[j] = rnd.Next(20) - 10 + rnd.NextDouble();
-    arr[j] = Math.Round(arr[j],1);
-    Console.Write($"{arr[j]}\t");
+    arr[i] = rnd.Next(20) - 10 + rnd.NextDouble();
+    arr[i] = Math.Round(arr[i],1);
+    Console.Write($"{arr[i]}\t");
 }
 arrMin = arr[0];
 arrMax = arr[0];
